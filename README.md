@@ -1,6 +1,6 @@
 # Research topic: Computer vision - based detection of neurons in 2D slices of mouse brain images obtained from tissue clearing and Light-Sheet Fluoresence Microscopy
 
-Author: Huynh Ngoc Tram Nguyen
+Author: Huynh Ngoc Tram Nguyen (2021)
 
 Supervisor: Dr. Dimitri Perrin
 
