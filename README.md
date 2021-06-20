@@ -1,4 +1,4 @@
-# Research topic: Computer vision - based detection of neurons in 2D slices of mouse brain images obtained from tissue clearing and Light-Sheet Fluoresence Microscopy
+# Research project: Computer vision - based detection of neurons in 2D slices of mouse brain images obtained from tissue clearing and Light-Sheet Fluoresence Microscopy
 
 Author: Huynh Ngoc Tram Nguyen (2021)
 
@@ -32,3 +32,6 @@ Queensland University of Technology
 - PIL 
 - cvs
 - ast
+
+
+Should you need any information related to this project, please email the author at: huynhngoctram.nguyen@connect.qut.edu.au.
