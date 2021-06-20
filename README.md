@@ -14,8 +14,8 @@ Queensland University of Technology
 - 'Overlays' folder: contains images with annotated points 
 - 'Mask' folder: binary masks of overlay images. 
 - 'Compare_label' folder: contains human annotation and machine annotation images for comparison.
-- 'unet' folder: contains codes for model architecture, loss, utils - adapting from Transfer Learning DeepFlash2 (Griebel, 2021) and MIT.
-- 'HTML_outputs folder: contains html files that have the outputs of main.py and Comparison_algorithms.ipynb. 
+- 'unet' folder: contains Python codes for model architecture, loss, utils, etc. (adapting from Transfer Learning DeepFlash2 (Griebel, 2021) and MIT) - which are called in 'main.py'. 
+- 'HTML_outputs folder: contains html files that have the outputs of 'main.py' and 'Comparison_algorithms.ipynb'. 
 
 # Libraries need to be installed to run the codes:
 - pandas
@@ -32,5 +32,3 @@ Queensland University of Technology
 - PIL 
 - cvs
 - ast
-
-
