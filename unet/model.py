@@ -1,7 +1,7 @@
 """
-U-Net
-The U-net unet implementation in Keras
-(MIT)
+U-net architecture.
+Reference: MIT.
+Ronneberger (2015). U-net: Convolutional networks for biomedical image segmentation. 
 """
 
 from tensorflow.keras.models import Model
@@ -18,12 +18,7 @@ from tensorflow.keras.layers import MaxPooling2D,Conv2D,Input,Add,MaxPool2D,Flat
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Layer, InputSpec
 
-############################################################
-#  U-net
-#  Adapted from
-#  Ronneberger et al.: "U-net: Convolutional networks for biomedical image segmentation."
-#  MICCAI. Springer, Cham, 2015.
-############################################################
+
 def unet_1024(img_rows, img_cols, num_img_channels, num_mask_channels, train_batch_norm = True):
 
     inputs = Input(shape=(img_rows, img_cols, num_img_channels))

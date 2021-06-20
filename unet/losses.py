@@ -1,6 +1,6 @@
 ############################################################
-#  Loss Functions
-#  from https://github.com/petrosgk/Kaggle-Carvana-Image-Masking-Challenge/blob/master/model/losses.py
+#  Loss Functions for U-net
+# fReference: https://github.com/petrosgk/Kaggle-Carvana-Image-Masking-Challenge/blob/master/model/losses.py
 ############################################################
 
 from keras import backend as K

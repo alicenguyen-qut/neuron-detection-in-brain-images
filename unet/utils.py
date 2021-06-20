@@ -1,7 +1,7 @@
 """
 U-Net
 Common utility functions and classes.
-Reference: Matthias Griebel
+Reference: Matthias Griebel (2021)
 """
 
 import os
@@ -67,6 +67,7 @@ def readImg(img_name, path, channels, dimensions):
 
     return (img)
 
+
 ############################################################
 #  Save Masks
 ############################################################
@@ -77,6 +78,7 @@ def saveMasks(msk_list, img_names, filetype = 'tif'):
     for i in range(len(img_names)):
         outfile = os.path.join(path, img_names[i] + '_mask.' + filetype)
         imsave(outfile, np.squeeze(msk_list[i], axis=2))
+
 
 ############################################################
 #  Load U-net Model
@@ -133,6 +135,8 @@ def load_unet(model_name):
                                             'weighted_bce_dice_loss': weighted_bce_dice_loss})
     return(model)
 
+
+
 ############################################################
 #  Join Mask Results for Plotting
 ############################################################
@@ -143,6 +147,8 @@ def join_masks(msk1, msk2, threshold = 0.5):
     join = np.append(msk1, msk2, axis=2)
     join = np.append(join, msk1, axis=2)
     return(join)
+
+
 
 ############################################################
 #  Plot images and mask
@@ -173,6 +179,8 @@ def plot_image_and_mask(img_names, img_list,
         axs[1].axis('off')
         fig.show()
 
+
+
 ############################################################
 #  Create Data Generator
 ############################################################
@@ -199,6 +207,8 @@ def create_generator(img_list, msk_list, SEED=1, BATCH_SIZE=4):
                                         seed=SEED, batch_size=BATCH_SIZE)
 
     return (zip(image_generator, mask_generator))
+
+    
 
 ############################################################
 #  Analyze regions and return labels

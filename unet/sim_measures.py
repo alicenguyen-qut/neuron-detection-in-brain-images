@@ -1,7 +1,6 @@
 """
-Sim_measures
-Similarity functions to compare segmentation maps (masks)
-(MIT)
+Similarity functions to compare annotations at pixel levels
+Reference: MIT.
 """
 
 from scipy.spatial.distance import jaccard
