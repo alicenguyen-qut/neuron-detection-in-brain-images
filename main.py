@@ -117,7 +117,6 @@ _ = [print('Jaccard %s: %s' %(name,s)) for name,s in zip(file_names, jac_str)]
 
 
 
-
 ###################################################
 ## 5. VISUALISATION OF COMPARISON AT PIXEL LEVELS##
 ###################################################
@@ -135,6 +134,3 @@ utils.plot_image_and_mask(img_names = file_names, img_list = img_list,
 
 utils.saveMasks(pred_train_list, file_ids, filetype = 'tif')
     
-
-
-sss
